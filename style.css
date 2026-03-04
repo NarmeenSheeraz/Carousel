@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    background:#111;
+    font-family:Arial, sans-serif;
+}
+
+.hero-slider{
+    position:relative;
+    width:100%;
+    height:520px;
+    overflow:hidden;
+}
+
+.hero-slider img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Dark Overlay Effect */
+.hero-slider::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.25);
+}
+
+/* Navigation Buttons */
+.nav-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:none;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    z-index:10;
+    transition:0.3s ease;
+}
+
+/* Left Button */
+.prev{
+    left:25px;
+}
+
+/* Right Button */
+.next{
+    right:25px;
+}
+
+/* Hover Effect */
+.nav-btn:hover{
+    background:#ffcc00;
+    color:#000;
+    transform:translateY(-50%) scale(1.1);
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    .hero-slider{
+        height:300px;
+    }
+
+    .nav-btn{
+        width:40px;
+        height:40px;
+        font-size:18px;
+    }
+}
