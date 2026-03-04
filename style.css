@@ -18,7 +18,7 @@ body{
     display:block;
 }
 
-/* Dark Overlay Effect */
+
 .hero-slider::after{
     content:"";
     position:absolute;
@@ -26,7 +26,7 @@ body{
     background:rgba(0,0,0,0.25);
 }
 
-/* Navigation Buttons */
+
 .nav-btn{
     position:absolute;
     top:50%;
@@ -43,32 +43,20 @@ body{
     transition:0.3s ease;
 }
 
-/* Left Button */
+
 .prev{
     left:25px;
 }
 
-/* Right Button */
+
 .next{
     right:25px;
 }
 
-/* Hover Effect */
+
 .nav-btn:hover{
     background:#ffcc00;
     color:#000;
     transform:translateY(-50%) scale(1.1);
 }
 
-/* Mobile Responsive */
-@media(max-width:768px){
-    .hero-slider{
-        height:300px;
-    }
-
-    .nav-btn{
-        width:40px;
-        height:40px;
-        font-size:18px;
-    }
-}

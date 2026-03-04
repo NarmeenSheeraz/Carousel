@@ -29,7 +29,7 @@ function forward(){
 
 function backward(){
     index--;
-    if(index < 0){
+    if(index == 0){
         index = images.length - 1;   
     }
     slider.src = images[index];
