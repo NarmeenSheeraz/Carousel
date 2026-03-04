@@ -21,7 +21,7 @@ const slider = document.getElementById("slider");
 
 function forward(){
     index++;
-    if(index >= images.length){
+    if(index == images.length -1){
         index = 0;   
     }
     slider.src = images[index];
